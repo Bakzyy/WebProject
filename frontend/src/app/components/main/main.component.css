@@ -1,0 +1,154 @@
+* {
+  margin-top: 20px;
+}
+
+.single {
+  padding: 30px 15px;
+  background: #fcfcfc;
+  border: 1px solid #f0f0f0;
+  width: 200px;
+  float: left;
+  margin-left: 10px;
+  padding-right: 10px;
+}
+
+.single h3.side-title {
+  margin: 0;
+  margin-bottom: 10px;
+  padding: 0;
+  font-size: 20px;
+  color: #333;
+  text-transform: uppercase;
+}
+
+.single h3.side-title:after {
+  content: '';
+  width: 60px;
+  height: 1px;
+  background: #ff173c;
+  display: block;
+  margin-top: 6px;
+}
+
+.single ul {
+  margin-bottom: 0;
+}
+
+.single li a {
+  color: #666;
+  font-size: 14px;
+  text-transform: uppercase;
+  border-bottom: 1px solid #f0f0f0;
+  line-height: 40px;
+  display: block;
+  text-decoration: none;
+}
+
+.single li a:hover {
+  color: #ff173c;
+}
+
+.single li:last-child a {
+  border-bottom: 0;
+}
+
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.product_content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  width: 700px;
+  height: 350px;
+  margin-bottom: 20px;
+  border: 1px solid whitesmoke;
+  border-radius: 10px;
+  padding: 10px 10px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.product_img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 350px;
+}
+
+.product_img img {
+  height: 200px;
+}
+
+.product_img button {
+  color: #252525;
+  font-size: 20px;
+  border: 1px solid white;
+  border-radius: 7px;
+}
+
+.product_info {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  height: 100%;
+  width: 50%;
+}
+
+button {
+  background-color: white;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+.actual_info {
+}
+
+.like_delete {
+  margin-top: auto;
+}
+
+.like_delete span {
+  margin-right: 20px;
+}
+
+.like_delete img {
+  width: 20px;
+}
+
+.like_delete button {
+  color: #1a77ce;
+  font-weight: bold;
+  border: 1px solid white;
+  border-radius: 7px;
+  margin-right: 20px;
+}
+
+.cart {
+  border-radius: 5px;
+}
+
+.cart:hover {
+  background-color: #3C5B6F;
+}
+
+.share {
+  font-size: larger;
+  border-radius: 5px;
+}
+
+.share:hover {
+
+  background-color: #3C5B6F;
+}
+
+.description {
+  font-size: large;
+  margin-top: 20px;
+}
+

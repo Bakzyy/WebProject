@@ -1,0 +1,33 @@
+<div class="single category">
+  <h3 class="side-title">Category</h3>
+  <ul class="list-unstyled" *ngFor="let category of categories">
+    <li><a (click)="selectCategory(category.id)" >{{category.name}} <span class="pull-right"> {{category.id}}</span></a></li>
+  </ul>
+  <ul class="list-unstyled">
+    <li><a (click)="selectCategory(-1)"> All </a></li>
+  </ul>
+
+</div>
+
+<div class="container">
+
+
+  <div class="content" *ngFor="let product of products; let a = index">
+    <div class="product_content" *ngIf="selectedCategory === product.category || selectedCategory === -1">
+      <div class="product_img">
+        <a target="_blank"><img [src]="product.photo"/></a>
+      </div>
+      <div class="product_info">
+        <div class="actual_info">
+          <a target="_blank"><p><strong>{{product.name}} {{product.price}}</strong></p></a>
+          <p class="description">{{product.description}}</p>
+        </div>
+        <div class="like_delete">
+          <span>TechShop</span>
+          <button (click)="addToCart(product)"><img src="/assets/images/shopping-cart.png" class="cart"/></button>
+          <button (click)="share('Купи мне ' + product.name)" class="share">Share</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

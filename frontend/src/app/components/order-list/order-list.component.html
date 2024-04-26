@@ -1,0 +1,12 @@
+<!-- order-list.component.html -->
+<h1>Order List</h1>
+<ul class="container">
+  <li *ngFor="let order of orders" class="order-item">
+    <div><strong>Order Date:</strong> <p>order.order_date</p></div>
+    <div><strong>ID:</strong> <p> {{order.id}}</p></div>
+    <div><strong>Product:</strong> <input type="number" [(ngModel)]="order.product"></div>
+    <div><strong>Quantity:</strong> <input type="number" [(ngModel)]="order.quantity"></div>
+    <button (click)="saveOrder(order)" class="update-button">Save</button>
+    <button (click)="removeOrder(order)" class="remove-button">Remove</button>
+  </li>
+</ul>
